@@ -1,0 +1,193 @@
+# Dooz Ecosystem Discovery Report
+
+**Generated:** 2026-01-14T18:45:00Z  
+**Phase:** DISCOVER → ANALYZE  
+**Iteration:** 001
+
+---
+
+## Executive Summary
+
+| Metric | Count |
+|--------|-------|
+| Total Repos Discovered | 89 |
+| In dooz-ecosystem.workspace | 23 |
+| Outside workspace (to analyze) | 66 |
+| Git repos detected | ~70+ |
+| Product repos | 35+ |
+| Library/SDK repos | 8+ |
+| Infra repos | 5+ |
+| Experiment repos | 10+ |
+| Deprecated/Archived | 15+ |
+
+---
+
+## Repos in dooz-ecosystem.workspace (Already Documented)
+
+| Repo | Type | Tech | Docs Status |
+|------|------|------|-------------|
+| dooz-ecosystem | docs | Markdown | ✅ Complete |
+| dooz-atlas | docs | Vite/React | ✅ Complete |
+| dooz-brain | product | Tauri/Rust | ✅ Complete |
+| dooz-copilot | product | React/TS | ✅ Complete |
+| dooz-meet | product | React/Vite | ✅ Complete |
+| dooz-oracle | product | React/TS | ✅ Complete |
+| dooz-hindsight | product | React/Vite | ✅ Complete |
+| dooz-yantra | library | Rust/TS | ✅ Complete |
+| dooz-hub | product | Tauri | ✅ Complete |
+| dooz-pilot | product | Tauri | ✅ Complete |
+| dooz-ballpark-ai | product | Bun/Hono | ✅ Complete |
+| dooz-cartridges | library | TypeScript | ✅ Complete |
+| dooz-web-builder | product | Next.js | ✅ Complete |
+| dooz-app-builder | product | Laravel | ✅ Complete |
+| app-registry | infra | JSON | ✅ Complete |
+| neo-analog | design | CSS/TS | ✅ Complete |
+| dooz-iot | infra | TypeScript | ✅ Complete |
+| dooz-perspective | product | Bun/React | ✅ Complete |
+| dooz-bun-sdk | library | TypeScript | ✅ Complete |
+| dooz-intent-lang | library | PHP | ✅ Complete |
+| dooz-pm-suite | product | Bun/Hono | ✅ Complete |
+| dooz-ai-router | library | TypeScript | ✅ Complete |
+| dooz-buddy | product | Tauri | ✅ Complete |
+
+---
+
+## Repos Outside Workspace (To Be Analyzed)
+
+### Products (ERP/CRM/Business Apps)
+
+| Repo | Type | Tech Stack | Priority |
+|------|------|------------|----------|
+| dooz | product | Laravel/React | P0 |
+| dwf | product | Laravel | P0 |
+| dwf-v2 | product | Laravel | P0 |
+| dwf-upgrade | product | Laravel | P0 |
+| csp | product | Laravel | P0 |
+| ems | product | Laravel | P0 |
+| pms | product | Laravel | P0 |
+| iaudit | product | Laravel | P0 |
+| iaudit-v2 | product | Laravel | P0 |
+| mahalakshmi_erp | product | Laravel | P0 |
+| ngpos | product | Laravel | P0 |
+| vvconnect_v4 | product | Laravel | P0 |
+| slv_project | product | Laravel | P0 |
+| water_billing | product | Laravel | P0 |
+| tiei | product | Laravel | P0 |
+| quik_loans | product | Laravel | P0 |
+| mlm | product | Laravel | P0 |
+| beccp | product | Laravel | P0 |
+| pwf | product | Laravel | P0 |
+| BECPS | product | Laravel | P0 |
+| shipment | product | Laravel | P0 |
+| nims | product | Laravel | P0 |
+| mahamandi | product | Laravel | P0 |
+| csms | product | Laravel | P0 |
+| infiquity | product | Laravel | P0 |
+| jn_web | product | Laravel | P0 |
+| vvconnect | product | Laravel | P0 |
+| vvconnect_v2 | product | Laravel | P0 |
+| vvconnect_v3 | product | Laravel | P0 |
+| maxton_theme | product | Laravel | P0 |
+| clear_freight | product | Laravel | P0 |
+
+### Learning/Development
+
+| Repo | Type | Tech Stack | Priority |
+|------|------|------------|----------|
+| learning | experiment | Various | P1 |
+| development | experiment | Various | P1 |
+| practising | experiment | Various | P1 |
+| code-notes | docs | Markdown | P2 |
+| Notes | docs | Various | P2 |
+| filament | experiment | PHP | P2 |
+
+### Experiments & AI
+
+| Repo | Type | Tech Stack | Priority |
+|------|------|------------|----------|
+| nonomous-ai | product | TypeScript | P0 |
+| jules | product | TypeScript | P0 |
+| experiments | experiment | Various | P1 |
+| oracle | experiment | Unknown | P2 |
+| tinyai | experiment | Unknown | P2 |
+| oracle | tool | Unknown | P2 |
+| diaachi | product | Unknown | P2 |
+
+### Design System & UI
+
+| Repo | Type | Tech Stack | Priority |
+|------|------|------------|----------|
+| dooziesoft-v2 | design | CSS/HTML | P1 |
+| doozie-ai | experiment | Unknown | P2 |
+| doozie-pm | experiment | Unknown | P2 |
+
+### Client & External
+
+| Repo | Type | Tech Stack | Priority |
+|------|------|------------|----------|
+| Client Docs | docs | Various | P2 |
+| brave_spaces | product | Unknown | P2 |
+| broadweb | product | Unknown | P2 |
+| websites | product | Various | P2 |
+| imagebuzz | product | Unknown | P2 |
+| games | product | Unknown | P2 |
+| themes | product | PHP | P2 |
+| suddi | product | Unknown | P2 |
+| radiographer | product | Unknown | P2 |
+| sr | product | Unknown | P2 |
+| chitpavanbng | product | Unknown | P2 |
+| kalaavid_erp | product | Unknown | P2 |
+| frappe | product | ERPNext | P2 |
+| vscode | infra | VSCode | P3 |
+
+### Deprecated/Archived
+
+| Repo | Type | Status |
+|------|------|--------|
+| aireazy | deprecated | Review |
+| app | deprecated | Review |
+| bec | deprecated | Review |
+| cutveggies | deprecated | Review |
+| dr | deprecated | Review |
+| crosswords | deprecated | Review |
+| vibhuv | deprecated | Review |
+| private | deprecated | Review |
+| productivity | deprecated | Review |
+
+---
+
+## Tech Stack Distribution
+
+| Technology | Count | Percentage |
+|------------|-------|------------|
+| Laravel (PHP) | 45+ | 55% |
+| React/TypeScript | 15+ | 18% |
+| Vue.js | 3 | 4% |
+| Tauri/Rust | 5 | 6% |
+| Bun/Node.js | 8 | 10% |
+| Python | 5 | 6% |
+| Unknown | 8 | 10% |
+
+---
+
+## Documentation Status Summary
+
+| Status | Count |
+|--------|-------|
+| ✅ Well-documented | 23 (workspace) |
+| ⚠️ Needs review | 40+ |
+| ❌ Missing docs | 20+ |
+| 🪦 Deprecated | 15 |
+
+---
+
+## Next Actions
+
+1. **P0 Repos:** Analyze dwf, dwf-v2, csp, ems, iaudit-v2, mahalakshmi_erp
+2. **AI Products:** Analyze nonomous-ai, jules
+3. **Design System:** Review dooziesoft-v2 against current standards
+4. **Cleanup:** Flag deprecated repos for archival
+
+---
+
+*Discovery completed. Proceeding to Analysis Phase.*
