@@ -19,6 +19,8 @@ Frameworks are tool-agnostic and survive model churn.
 | [Architecture vs Execution](Architecture_vs_Execution.md) | Design vs implementation |
 | [Human in the Loop](Human_in_the_Loop_Model.md) | Human oversight model |
 | [Cost vs Leverage](Cost_vs_Leverage_Framework.md) | ROI analysis |
+| [Organizational Memory Patterns](Organizational_Memory_Patterns.md) | OMO specification and memory contracts |
+| [Dooz Identity Token](Dooz_Identity_Token.md) | Unified identity across desktop & cloud |
 
 ---
 

@@ -1,10 +1,12 @@
-# DoozieSoft — Agentic AI Development Knowledge System
+# DoozieSoft — Unified Knowledge System
 
-This repository is the **single source of truth** for how DoozieSoft uses AI
-for software development, architecture, reviews, and agentic workflows.
+This repository is the **single source of truth** for DoozieSoft's:
+- **AI/Agentic Development** — SOPs, frameworks, prompts, and best practices
+- **Ecosystem Architecture** — System design, APIs, and integration patterns
+- **Application Documentation** — Individual app guides and specifications
 
 It defines **rules, guides, frameworks, prompts, and institutional knowledge**
-to ensure AI usage is **controlled, cost-efficient, auditable, and aligned**
+to ensure development is **controlled, cost-efficient, auditable, and aligned**
 with DoozieSoft engineering philosophy.
 
 ---
@@ -63,6 +65,50 @@ with DoozieSoft engineering philosophy.
 - [Model Catalog](08_APPENDIX/Model_Catalog.md)
 - [Glossary](08_APPENDIX/Glossary.md)
 - [Change Log](08_APPENDIX/Change_Log.md)
+
+---
+
+## 🏗️ Ecosystem Architecture
+
+- [Ecosystem Overview](09_ECOSYSTEM/Overview.md)
+- [System Architecture](09_ECOSYSTEM/Architecture.md)
+- [Data Model](09_ECOSYSTEM/Data_Model.md)
+- [API Contracts](09_ECOSYSTEM/API_Contracts.md)
+- [Multi-Tenancy](09_ECOSYSTEM/Multi_Tenancy.md)
+- [Developer Guide](09_ECOSYSTEM/Developer_Guide.md)
+- [Coding Standards](09_ECOSYSTEM/Coding_Standards.md)
+
+---
+
+## 🔌 Integration & Components
+
+- [Brain Integration](09_ECOSYSTEM/Brain_Integration.md)
+- [Dooz Sync](09_ECOSYSTEM/Dooz_Sync_Integration.md)
+- [Cartridge Guide](09_ECOSYSTEM/Cartridge_Guide.md)
+- [Intent Language](09_ECOSYSTEM/Intent_Language.md)
+- [Webhook Patterns](09_ECOSYSTEM/Webhook_Patterns.md)
+
+---
+
+## 🚀 Operations
+
+- [Deployment](09_ECOSYSTEM/Deployment.md)
+- [Dooz Deploy](09_ECOSYSTEM/Dooz_Deploy.md)
+- [Monitoring](09_ECOSYSTEM/Monitoring.md)
+- [Security](09_ECOSYSTEM/Security.md)
+- [Incident Response](09_ECOSYSTEM/Incident_Response.md)
+
+---
+
+## 📱 Applications
+
+- [Apps Overview](10_APPS/README.md)
+- [Dooz Brain](10_APPS/Dooz_Brain.md) — AI orchestration platform
+- [Dooz Hub](10_APPS/Dooz_Hub.md) — Central dashboard
+- [Dooz Pilot](10_APPS/Dooz_Pilot.md) — Project management
+- [Dooz Core](10_APPS/Dooz_Core.md) — Core services
+- [Dooz Bridge](10_APPS/Dooz_Bridge.md) — Integration layer
+- [Ballpark AI](10_APPS/Dooz_Ballpark_AI.md) — Estimation tool
 
 ---
 

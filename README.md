@@ -1,6 +1,9 @@
-# Dooz Atlas - AI Development Knowledge System
+# Dooz Atlas - Unified Knowledge System
 
-The **Dooz Atlas** is DoozieSoft's central knowledge base for Agentic AI Development, containing SOPs, guides, frameworks, prompt libraries, and implementation references.
+The **Dooz Atlas** is DoozieSoft's central knowledge base containing:
+- **AI/Agentic Development** — SOPs, frameworks, prompts, and best practices
+- **Ecosystem Documentation** — Architecture, APIs, and integration guides
+- **Application Docs** — Individual app specifications and guides
 
 ## 📚 Documentation Structure
 
@@ -14,6 +17,8 @@ The **Dooz Atlas** is DoozieSoft's central knowledge base for Agentic AI Develop
 | [06_UI_AGENTIC_AI](06_UI_AGENTIC_AI/) | UI/UX for agentic systems |
 | [07_IMPLEMENTATION](07_IMPLEMENTATION/) | Technical implementations |
 | [08_APPENDIX](08_APPENDIX/) | Reference materials |
+| [09_ECOSYSTEM](09_ECOSYSTEM/) | Ecosystem architecture & guides |
+| [10_APPS](10_APPS/) | Application documentation |
 
 ## 🖥️ Docs Viewer
 
