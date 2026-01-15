@@ -1,43 +1,39 @@
-# Dooz Ecosystem Documentation
+# Ecosystem Documentation Index
 
-This section contains comprehensive documentation for the Dooz platform ecosystem, covering architecture, development guides, integrations, and operational practices.
+Welcome to the Dooz Ecosystem documentation hub. This section covers the architecture, components, and standards that govern the Dooz ecosystem.
 
-## Contents
+## 📂 Documentation Structure
 
-### Architecture & Design
-- [Architecture](./Architecture.md) - System architecture overview
-- [Data Model](./Data_Model.md) - Core data structures and relationships
-- [Multi SDK Architecture](./Multi_SDK_Architecture.md) - SDK design across platforms
-- [Enterprise Suites](./Enterprise_Suites.md) - Enterprise-level architecture patterns
-- [Multi Tenancy](./Multi_Tenancy.md) - Multi-tenant implementation details
+### 01. [CORE](./01_CORE/)
+High-level strategic and architectural overviews.
+- [Overview](./01_CORE/Overview.md) - **Start Here**
+- [Component Catalog](./01_CORE/Component_Catalog.md) - Detailed component responsibilities.
+- [Architecture](./01_CORE/Architecture.md) - Interaction maps and philosophy.
+- [Platform Boundaries](./01_CORE/Platform_Boundaries.md) - Ecosystem vs. Platform distinctions.
 
-### Development
-- [Developer Guide](./Developer_Guide.md) - Getting started for developers
-- [Developing Apps](./Developing_Apps.md) - Building applications on Dooz
-- [Coding Standards](./Coding_Standards.md) - Code style and conventions
-- [Testing Guide](./Testing_Guide.md) - Testing strategies and practices
-- [Client App Guide](./Client_App_Guide.md) - Client application development
+### 02. [DEVELOPMENT](./02_DEVELOPMENT/)
+Guides and resources for building within the ecosystem.
+- [Developer Guide](./02_DEVELOPMENT/Developer_Guide.md)
+- [Quickstart](./02_DEVELOPMENT/Quickstart.md)
+- [Coding Standards](./02_DEVELOPMENT/Coding_Standards.md)
 
-### Integrations
-- [API Contracts](./API_Contracts.md) - API specifications and contracts
-- [Brain Integration](./Brain_Integration.md) - Dooz Brain integration guide
-- [Dooz Sync Integration](./Dooz_Sync_Integration.md) - Synchronization services
-- [Webhook Patterns](./Webhook_Patterns.md) - Webhook implementation patterns
-- [Cartridge Guide](./Cartridge_Guide.md) - Cartridge system documentation
-- [Intent Language](./Intent_Language.md) - Intent language specification
-- [UI Components](./UI_Components.md) - Shared UI component library
+### 03. [INTEGRATIONS](./03_INTEGRATIONS/)
+How components interact with shared services.
+- [Brain Integration](./03_INTEGRATIONS/Brain_Integration.md)
+- [Webhook Patterns](./03_INTEGRATIONS/Webhook_Patterns.md)
 
-### Operations
-- [Core Doctrine](./Core_Doctrine.md) - Core platform principles
-- [Infrastructure Journey](./Infrastructure_Journey.md) - Infrastructure evolution
-- [Dooz Deploy](./Dooz_Deploy.md) - Deployment tooling
-- [Deployment](./Deployment.md) - Deployment procedures
-- [Monitoring](./Monitoring.md) - Monitoring and observability
-- [Security](./Security.md) - Security practices and policies
-- [Incident Response](./Incident_Response.md) - Incident management
-- [Migrations Guide](./Migrations_Guide.md) - Database and system migrations
+### 04. [OPERATIONS](./04_OPERATIONS/)
+Deployment, monitoring, and security.
+- [Deployment](./04_OPERATIONS/Deployment.md)
+- [Security](./04_OPERATIONS/Security.md)
+- [Multi-Tenancy](./04_OPERATIONS/Multi_Tenancy.md)
 
-### Getting Started
-- [Welcome](./Welcome.md) - Welcome to the ecosystem
-- [Overview](./Overview.md) - Ecosystem overview
-- [Quickstart](./Quickstart.md) - Quick start guide
+### 05. [TECHNICAL_SPECS](./05_TECHNICAL_SPECS/)
+Low-level specifications and data models.
+- [API Contracts](./05_TECHNICAL_SPECS/API_Contracts.md)
+- [Data Model](./05_TECHNICAL_SPECS/Data_Model.md)
+- [Intent Language](./05_TECHNICAL_SPECS/Intent_Language.md)
+
+---
+
+*Last updated: 2026-01-15*
