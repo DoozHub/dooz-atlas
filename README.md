@@ -1,4 +1,8 @@
-# Dooz Atlas - Unified Knowledge System
+# Dooz Atlas
+
+dooz-atlas is a documentation repository containing DoozieSoft's internal knowledge base, organized as markdown files across 11 sections covering SOPs, guides, frameworks, prompt libraries, implementation patterns, and ecosystem architecture. It includes a React + Vite documentation viewer that renders the markdown content with navigation.
+
+---
 
 The **Dooz Atlas** is DoozieSoft's central knowledge base containing:
 - **AI/Agentic Development** — SOPs, frameworks, prompts, and best practices
