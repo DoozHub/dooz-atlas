@@ -316,16 +316,16 @@ Developer 3 (Integration):
 
 | Requirement | Enabling Unit | Status |
 |-------------|---------------|--------|
-| Create intents for work items | PMS-UI-05 | ❌ Needed |
-| View all active intents | PMS-UI-01 | ❌ Needed |
-| Transition intent states | PMS-UI-03 | ❌ Needed |
+| Create intents for work items | PMS-UI-05 | ✅ Done |
+| View all active intents | PMS-UI-01 | ✅ Done |
+| Transition intent states | PMS-UI-03 | ✅ Done |
 
 ### Decision Tracking
 
 | Requirement | Enabling Unit | Status |
 |-------------|---------------|--------|
-| Record decisions with options | PMS-UI-04 | ❌ Needed |
-| View decision ledger | PMS-UI-02 | ❌ Needed |
+| Record decisions with options | PMS-UI-04 | ✅ Done |
+| View decision ledger | PMS-UI-02 | ✅ Done |
 | Supersede decisions | PMS-UI-04 (extend) | ❌ Future |
 
 ### Documentation
@@ -340,32 +340,35 @@ Developer 3 (Integration):
 
 | Requirement | Enabling Unit | Status |
 |-------------|---------------|--------|
-| Review past decisions | PMS-UI-02 | ❌ Needed |
-| Track time spent | CORE-PKG-01 | ❌ Needed |
+| Review past decisions | PMS-UI-02 | ✅ Done |
+| Track time spent | CORE-PKG-01 | ⚠️ Script Ready |
 
 ---
 
-## Summary: Minimum Viable Dogfooding
+## Summary: Phase 1 Complete ✅
 
 ```
-MUST IMPLEMENT:
-├── PMS-UI-01: Intent Dashboard
-├── PMS-UI-02: Intent Detail View  
-├── PMS-UI-03: State Transition
-├── PMS-UI-04: Decision Commit Form
-├── PMS-UI-05: Create Intent Form
-├── PLT-SESS-01: Session Store
-└── PLT-SESS-02: Session Restore
+MUST IMPLEMENT: ✅ ALL DONE
+├── PMS-UI-01: Intent Dashboard ✅
+├── PMS-UI-02: Intent Detail View ✅
+├── PMS-UI-03: State Transition ✅
+├── PMS-UI-04: Decision Commit Form ✅
+├── PMS-UI-05: Create Intent Form ✅
+├── PLT-SESS-01: Session Store ✅
+└── PLT-SESS-02: Session Restore ✅
 
-SHOULD IMPLEMENT:
-├── CORE-TENANT-01: DoozieSoft Tenant
-├── CORE-PKG-01: Enable Worklog
-└── CORE-PKG-02: Enable Quicky
+SHOULD IMPLEMENT: ✅ ALL DONE
+├── CORE-TENANT-01: DoozieSoft Tenant ✅ (setup-doozie-internal.php)
+├── CORE-PKG-01: Enable Worklog ✅ (enable-worklog-doozie.php)
+└── CORE-PKG-02: Enable Quicky ✅ (enable-quicky-doozie.php)
 
-COULD DEFER:
-├── PLT-MCP-01: MCP Connection
-└── PLT-MCP-02: Context Injection
+COULD DEFER: ✅ ALL DONE
+├── PLT-MCP-01: MCP Connection ✅ (brain_mcp.rs)
+└── PLT-MCP-02: Context Injection ✅ (context-injection.ts)
 ```
+
+> [!IMPORTANT]
+> **Phase 2 Plan Available**: See `IMPLEMENTATION_PLAN_PHASE2.md` for next steps.
 
 ---
 
