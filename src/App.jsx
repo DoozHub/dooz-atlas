@@ -4,7 +4,7 @@ import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
 import './App.css'
 
-// Documentation structure
+// Documentation structure - Restructured for clarity
 const DOCS_STRUCTURE = {
   title: 'Dooz Atlas',
   sections: [
@@ -16,18 +16,20 @@ const DOCS_STRUCTURE = {
       ]
     },
     {
-      name: '01 SOP',
+      name: '📋 SOPs & Policies',
       items: [
         { name: 'Overview', path: '01_SOP/README.md' },
         { name: 'AI Usage SOP', path: '01_SOP/AI_Usage_SOP.md' },
+        { name: 'AI Trends 2026', path: '01_SOP/AI_Trends_2026.md' },
         { name: 'Model Routing Policy', path: '01_SOP/Model_Routing_Policy.md' },
         { name: 'Cost Governance', path: '01_SOP/Cost_Governance.md' },
         { name: 'Security & Data Policy', path: '01_SOP/Security_and_Data_Policy.md' },
+        { name: 'Deprecation Policy', path: '01_SOP/Deprecation_Policy.md' },
         { name: 'Violations & Escalation', path: '01_SOP/Violations_and_Escalation.md' },
       ]
     },
     {
-      name: '02 Guides',
+      name: '📖 Guides',
       items: [
         { name: 'Overview', path: '02_GUIDES/README.md' },
         { name: 'Using Copilot', path: '02_GUIDES/Using_Copilot_Correctly.md' },
@@ -35,10 +37,16 @@ const DOCS_STRUCTURE = {
         { name: 'Thinking Models', path: '02_GUIDES/When_to_Use_Thinking_Models.md' },
         { name: 'Self-Hosted Models', path: '02_GUIDES/Self_Hosted_Model_Guide.md' },
         { name: 'Review & Audit', path: '02_GUIDES/Review_and_Audit_Workflows.md' },
+        { name: 'Quickstart', path: '09_ECOSYSTEM/02_DEVELOPMENT/Quickstart.md' },
+        { name: 'Developer Guide', path: '09_ECOSYSTEM/02_DEVELOPMENT/Developer_Guide.md' },
+        { name: 'Developing Apps', path: '09_ECOSYSTEM/02_DEVELOPMENT/Developing_Apps.md' },
+        { name: 'Coding Standards', path: '09_ECOSYSTEM/02_DEVELOPMENT/Coding_Standards.md' },
+        { name: 'Testing Guide', path: '09_ECOSYSTEM/02_DEVELOPMENT/Testing_Guide.md' },
+        { name: 'Client App Guide', path: '09_ECOSYSTEM/02_DEVELOPMENT/Client_App_Guide.md' },
       ]
     },
     {
-      name: '03 Frameworks',
+      name: '🧠 Frameworks',
       items: [
         { name: 'Overview', path: '03_FRAMEWORKS/README.md' },
         { name: 'Task Classification', path: '03_FRAMEWORKS/Task_Classification_Framework.md' },
@@ -46,10 +54,12 @@ const DOCS_STRUCTURE = {
         { name: 'Architecture vs Execution', path: '03_FRAMEWORKS/Architecture_vs_Execution.md' },
         { name: 'Human in the Loop', path: '03_FRAMEWORKS/Human_in_the_Loop_Model.md' },
         { name: 'Cost vs Leverage', path: '03_FRAMEWORKS/Cost_vs_Leverage_Framework.md' },
+        { name: 'Identity Token (DIT)', path: '03_FRAMEWORKS/Dooz_Identity_Token.md' },
+        { name: 'Memory Patterns', path: '03_FRAMEWORKS/Organizational_Memory_Patterns.md' },
       ]
     },
     {
-      name: '04 Prompt Library',
+      name: '💬 Prompt Library',
       items: [
         { name: 'Overview', path: '04_PROMPT_LIBRARY/README.md' },
         { name: 'System Design', path: '04_PROMPT_LIBRARY/Architecture/System_Design.md' },
@@ -67,7 +77,7 @@ const DOCS_STRUCTURE = {
       ]
     },
     {
-      name: '05 Knowledge Base',
+      name: '📚 Knowledge Base',
       items: [
         { name: 'Overview', path: '05_KNOWLEDGE_BASE/README.md' },
         { name: 'Lessons Learned', path: '05_KNOWLEDGE_BASE/Lessons_Learned.md' },
@@ -78,7 +88,7 @@ const DOCS_STRUCTURE = {
       ]
     },
     {
-      name: '06 UI Agentic AI',
+      name: '🤖 UI & Agentic AI',
       items: [
         { name: 'Overview', path: '06_UI_AGENTIC_AI/README.md' },
         { name: 'UX Principles', path: '06_UI_AGENTIC_AI/UX_Principles.md' },
@@ -90,7 +100,7 @@ const DOCS_STRUCTURE = {
       ]
     },
     {
-      name: '07 Implementation',
+      name: '🔧 Implementation',
       items: [
         { name: 'Overview', path: '07_IMPLEMENTATION/README.md' },
         { name: 'AG-Guard Plugin', path: '07_IMPLEMENTATION/AG_Guard_Plugin.md' },
@@ -101,65 +111,134 @@ const DOCS_STRUCTURE = {
       ]
     },
     {
-      name: '08 Appendix',
+      name: '🌐 Ecosystem',
+      items: [
+        { name: 'Index', path: '09_ECOSYSTEM/README.md' },
+        { name: 'Overview', path: '09_ECOSYSTEM/01_CORE/Overview.md' },
+        { name: 'Component Catalog', path: '09_ECOSYSTEM/01_CORE/Component_Catalog.md' },
+        { name: 'Architecture', path: '09_ECOSYSTEM/01_CORE/Architecture.md' },
+        { name: 'Platform Boundaries', path: '09_ECOSYSTEM/01_CORE/Platform_Boundaries.md' },
+        { name: 'Welcome', path: '09_ECOSYSTEM/01_CORE/Welcome.md' },
+        { name: 'Core Doctrine', path: '09_ECOSYSTEM/01_CORE/Core_Doctrine.md' },
+        { name: 'Brain Integration', path: '09_ECOSYSTEM/03_INTEGRATIONS/Brain_Integration.md' },
+        { name: 'Dooz Sync', path: '09_ECOSYSTEM/03_INTEGRATIONS/Dooz_Sync_Integration.md' },
+        { name: 'Webhook Patterns', path: '09_ECOSYSTEM/03_INTEGRATIONS/Webhook_Patterns.md' },
+        { name: 'Cartridge Guide', path: '09_ECOSYSTEM/03_INTEGRATIONS/Cartridge_Guide.md' },
+        { name: 'Multi-SDK Arch', path: '09_ECOSYSTEM/03_INTEGRATIONS/Multi_SDK_Architecture.md' },
+        { name: 'Enterprise Suites', path: '09_ECOSYSTEM/03_INTEGRATIONS/Enterprise_Suites.md' },
+        { name: 'API Contracts', path: '09_ECOSYSTEM/05_TECHNICAL_SPECS/API_Contracts.md' },
+        { name: 'Data Model', path: '09_ECOSYSTEM/05_TECHNICAL_SPECS/Data_Model.md' },
+        { name: 'Intent Language', path: '09_ECOSYSTEM/05_TECHNICAL_SPECS/Intent_Language.md' },
+        { name: 'UI Components', path: '09_ECOSYSTEM/05_TECHNICAL_SPECS/UI_Components.md' },
+        { name: 'Migrations Guide', path: '09_ECOSYSTEM/05_TECHNICAL_SPECS/Migrations_Guide.md' },
+        { name: 'Deployment', path: '09_ECOSYSTEM/04_OPERATIONS/Deployment.md' },
+        { name: 'Dooz Deploy', path: '09_ECOSYSTEM/04_OPERATIONS/Dooz_Deploy.md' },
+        { name: 'Monitoring', path: '09_ECOSYSTEM/04_OPERATIONS/Monitoring.md' },
+        { name: 'Security', path: '09_ECOSYSTEM/04_OPERATIONS/Security.md' },
+        { name: 'Multi-Tenancy', path: '09_ECOSYSTEM/04_OPERATIONS/Multi_Tenancy.md' },
+        { name: 'Incident Response', path: '09_ECOSYSTEM/04_OPERATIONS/Incident_Response.md' },
+        { name: 'Infrastructure', path: '09_ECOSYSTEM/04_OPERATIONS/Infrastructure_Journey.md' },
+      ]
+    },
+    {
+      name: '📱 Apps (Canonical)',
+      items: [
+        { name: 'Overview', path: '10_APPS/README.md' },
+        { name: 'Dooz Core', path: '10_APPS/Dooz_Core.md' },
+        { name: 'Dooz Brain', path: '10_APPS/Dooz_Brain.md' },
+        { name: 'Dooz Hub', path: '10_APPS/Dooz_Hub.md' },
+        { name: 'Dooz Pilot', path: '10_APPS/Dooz_Pilot.md' },
+        { name: 'Dooz AI Router', path: '10_APPS/Dooz_AI_Router.md' },
+        { name: 'Dooz Copilot', path: '10_APPS/Dooz_Copilot.md' },
+        { name: 'Dooz Perspective', path: '10_APPS/Dooz_Perspective.md' },
+        { name: 'Dooz PM Suite', path: '10_APPS/Dooz_PM_Suite.md' },
+        { name: 'Dooz Hindsight', path: '10_APPS/Dooz_Hindsight.md' },
+      ]
+    },
+    {
+      name: '🧩 Apps (Modules)',
+      items: [
+        { name: 'Dooz Bridge', path: '10_APPS/Dooz_Bridge.md' },
+        { name: 'Dooz Sync', path: '10_APPS/Dooz_Sync.md' },
+        { name: 'Dooz App Builder', path: '10_APPS/Dooz_App_Builder.md' },
+        { name: 'Website Builder', path: '10_APPS/Dooz_Website_Builder.md' },
+        { name: 'Dooz Yantra', path: '10_APPS/Dooz_Yantra.md' },
+        { name: 'Ballpark AI', path: '10_APPS/Dooz_Ballpark_AI.md' },
+        { name: 'Cartridges', path: '10_APPS/Dooz_Cartridges.md' },
+        { name: 'Quicky', path: '10_APPS/Quicky.md' },
+        { name: 'Worklog', path: '10_APPS/Worklog.md' },
+        { name: 'Neo Analog', path: '10_APPS/Neo_Analog.md' },
+      ]
+    },
+    {
+      name: '🛠️ Developer SDKs',
+      items: [
+        { name: 'Intent Language', path: '10_APPS/Dooz_Intent_Lang.md' },
+        { name: 'Bun SDK', path: '10_APPS/Dooz_Bun_SDK.md' },
+        { name: 'KiloCore SDK', path: '10_APPS/KiloCore_SDK.md' },
+        { name: 'App Registry', path: '10_APPS/App_Registry.md' },
+      ]
+    },
+    {
+      name: '🔬 Internal Tools',
+      items: [
+        { name: 'Nonomous AI', path: '10_APPS/NONOMOUS_AI/README.md' },
+        { name: 'Nonomous Arch', path: '10_APPS/NONOMOUS_AI/ARCHITECTURE.md' },
+        { name: 'Nonomous Decisions', path: '10_APPS/NONOMOUS_AI/DECISIONS.md' },
+        { name: 'Jules on Steroids', path: '10_APPS/Jules_on_Steroids.md' },
+        { name: 'AgentCraft', path: '10_APPS/AgentCraft.md' },
+        { name: 'Laravel Guardian', path: '10_APPS/Laravel_Guardian.md' },
+        { name: 'Schema City', path: '10_APPS/Schema_City.md' },
+        { name: 'Task Loom', path: '10_APPS/Task_Loom.md' },
+        { name: 'VSCode Redmine', path: '10_APPS/VSCode_Redmine.md' },
+        { name: 'Cloud Ops Sentinel', path: '10_APPS/Cloud_Ops_Sentinel.md' },
+        { name: 'Dooz CIDI', path: '10_APPS/Dooz_CIDI.md' },
+        { name: 'Dooz IoT', path: '10_APPS/Dooz_IoT.md' },
+        { name: 'Dooz Meet', path: '10_APPS/Dooz_Meet.md' },
+        { name: 'Dooz Oracle', path: '10_APPS/Dooz_Oracle.md' },
+        { name: 'Core Calibration', path: '10_APPS/Dooz_Core_Calibration.md' },
+      ]
+    },
+    {
+      name: '📎 Appendix',
       items: [
         { name: 'Overview', path: '08_APPENDIX/README.md' },
         { name: 'Glossary', path: '08_APPENDIX/Glossary.md' },
-        { name: 'Model Catalog', path: '08_APPENDIX/Model_Catalog.md' },
+        { name: 'Model Reference', path: '08_APPENDIX/Model_Catalog.md' },
+        { name: 'Model Landscape 2026', path: '08_APPENDIX/Model_Landscape_2026.md' },
         { name: 'Cost Assumptions', path: '08_APPENDIX/Cost_Assumptions.md' },
         { name: 'Change Log', path: '08_APPENDIX/Change_Log.md' },
       ]
     },
     {
-      name: '09 Ecosystem',
+      name: '🗄️ Archive',
       items: [
-        { name: 'Overview', path: '09_ECOSYSTEM/README.md' },
-        { name: 'Welcome', path: '09_ECOSYSTEM/Welcome.md' },
-        { name: 'Quickstart', path: '09_ECOSYSTEM/Quickstart.md' },
-        { name: 'Architecture', path: '09_ECOSYSTEM/Architecture.md' },
-        { name: 'Data Model', path: '09_ECOSYSTEM/Data_Model.md' },
-        { name: 'Multi-SDK Architecture', path: '09_ECOSYSTEM/Multi_SDK_Architecture.md' },
-        { name: 'Enterprise Suites', path: '09_ECOSYSTEM/Enterprise_Suites.md' },
-        { name: 'Multi-Tenancy', path: '09_ECOSYSTEM/Multi_Tenancy.md' },
-        { name: 'Developer Guide', path: '09_ECOSYSTEM/Developer_Guide.md' },
-        { name: 'Developing Apps', path: '09_ECOSYSTEM/Developing_Apps.md' },
-        { name: 'Coding Standards', path: '09_ECOSYSTEM/Coding_Standards.md' },
-        { name: 'Testing Guide', path: '09_ECOSYSTEM/Testing_Guide.md' },
-        { name: 'Client App Guide', path: '09_ECOSYSTEM/Client_App_Guide.md' },
-        { name: 'API Contracts', path: '09_ECOSYSTEM/API_Contracts.md' },
-        { name: 'Brain Integration', path: '09_ECOSYSTEM/Brain_Integration.md' },
-        { name: 'Dooz Sync', path: '09_ECOSYSTEM/Dooz_Sync_Integration.md' },
-        { name: 'Webhook Patterns', path: '09_ECOSYSTEM/Webhook_Patterns.md' },
-        { name: 'Cartridge Guide', path: '09_ECOSYSTEM/Cartridge_Guide.md' },
-        { name: 'Intent Language', path: '09_ECOSYSTEM/Intent_Language.md' },
-        { name: 'UI Components', path: '09_ECOSYSTEM/UI_Components.md' },
-        { name: 'Core Doctrine', path: '09_ECOSYSTEM/Core_Doctrine.md' },
-        { name: 'Infrastructure', path: '09_ECOSYSTEM/Infrastructure_Journey.md' },
-        { name: 'Dooz Deploy', path: '09_ECOSYSTEM/Dooz_Deploy.md' },
-        { name: 'Deployment', path: '09_ECOSYSTEM/Deployment.md' },
-        { name: 'Monitoring', path: '09_ECOSYSTEM/Monitoring.md' },
-        { name: 'Security', path: '09_ECOSYSTEM/Security.md' },
-        { name: 'Incident Response', path: '09_ECOSYSTEM/Incident_Response.md' },
-        { name: 'Migrations Guide', path: '09_ECOSYSTEM/Migrations_Guide.md' },
-      ]
-    },
-    {
-      name: '10 Apps',
-      items: [
-        { name: 'Overview', path: '10_APPS/README.md' },
-        { name: 'Dooz Brain', path: '10_APPS/Dooz_Brain.md' },
-        { name: 'Dooz Hub', path: '10_APPS/Dooz_Hub.md' },
-        { name: 'Dooz Pilot', path: '10_APPS/Dooz_Pilot.md' },
-        { name: 'Dooz Core', path: '10_APPS/Dooz_Core.md' },
-        { name: 'Dooz Bridge', path: '10_APPS/Dooz_Bridge.md' },
-        { name: 'Dooz Sync', path: '10_APPS/Dooz_Sync.md' },
-        { name: 'Dooz Yantra', path: '10_APPS/Dooz_Yantra.md' },
-        { name: 'Ballpark AI', path: '10_APPS/Dooz_Ballpark_AI.md' },
-        { name: 'App Builder', path: '10_APPS/Dooz_App_Builder.md' },
-        { name: 'Website Builder', path: '10_APPS/Dooz_Website_Builder.md' },
-        { name: 'Cartridges', path: '10_APPS/Dooz_Cartridges.md' },
-        { name: 'Quicky', path: '10_APPS/Quicky.md' },
-        { name: 'Worklog', path: '10_APPS/Worklog.md' },
+        { name: 'LLM Vibe Check', path: '10_APPS/LLM_Vibe_Check.md' },
+        { name: 'De-Hype', path: '10_APPS/De_Hype.md' },
+        { name: 'Echo Tile', path: '10_APPS/Echo_Tile.md' },
+        { name: 'IntentFill', path: '10_APPS/IntentFill.md' },
+        { name: 'PennyWise', path: '10_APPS/PennyWise.md' },
+        { name: 'CookieJar', path: '10_APPS/CookieJar.md' },
+        { name: 'Brain MD', path: '10_APPS/Brain_MD.md' },
+        { name: 'Camera.py', path: '10_APPS/Camera_py.md' },
+        { name: 'Clippys Revenge', path: '10_APPS/Clippys_Revenge.md' },
+        { name: 'CalcSheet', path: '10_APPS/CalcSheet.md' },
+        { name: 'Experiments Summary', path: '10_APPS/Experiments_Summary.md' },
+        { name: 'Nonomous Onboarding', path: '10_APPS/NONOMOUS_AI/ONBOARDING.md' },
+        { name: 'Nonomous Roadmap', path: '10_APPS/NONOMOUS_AI/ROADMAP.md' },
+        { name: 'Core Roadmap (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-core/ROADMAP.md' },
+        { name: 'Core Technical (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-core/TECHNICAL.md' },
+        { name: 'Brain Roadmap (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-brain/ROADMAP.md' },
+        { name: 'Brain Technical (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-brain/TECHNICAL.md' },
+        { name: 'Hub Roadmap (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-hub/ROADMAP.md' },
+        { name: 'Hub Technical (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-hub/TECHNICAL.md' },
+        { name: 'Sync Roadmap (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-sync/ROADMAP.md' },
+        { name: 'Sync Technical (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-sync/TECHNICAL.md' },
+        { name: 'Pilot Roadmap (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-pilot/ROADMAP.md' },
+        { name: 'Pilot Technical (Legacy)', path: '12_LEGACY_ARCHIVE/Apps/dooz-pilot/TECHNICAL.md' },
+        { name: 'Audit: Neo Analog', path: '12_LEGACY_ARCHIVE/Workspace_Audit/neo-analog.md' },
+        { name: 'Audit: Dooz Intent Lang', path: '12_LEGACY_ARCHIVE/Workspace_Audit/dooz_intent_lang.md' },
+        { name: 'Audit: Dooz Hub', path: '12_LEGACY_ARCHIVE/Workspace_Audit/dooz-hub.md' },
       ]
     },
   ]
