@@ -16,17 +16,28 @@ Guides and resources for building within the ecosystem.
 - [Developer Guide](./02_DEVELOPMENT/Developer_Guide.md)
 - [Quickstart](./02_DEVELOPMENT/Quickstart.md)
 - [Coding Standards](./02_DEVELOPMENT/Coding_Standards.md)
+- [Testing Guide](./02_DEVELOPMENT/Testing_Guide.md)
+- [Developing Apps](./02_DEVELOPMENT/Developing_Apps.md)
+- [Client App Guide](./02_DEVELOPMENT/Client_App_Guide.md)
 
 ### 03. [INTEGRATIONS](./03_INTEGRATIONS/)
 How components interact with shared services.
 - [Brain Integration](./03_INTEGRATIONS/Brain_Integration.md)
 - [Webhook Patterns](./03_INTEGRATIONS/Webhook_Patterns.md)
+- [Cartridge Guide](./03_INTEGRATIONS/Cartridge_Guide.md)
+- [Dooz Sync Integration](./03_INTEGRATIONS/Dooz_Sync_Integration.md)
+- [Multi-SDK Architecture](./03_INTEGRATIONS/Multi_SDK_Architecture.md)
+- [Enterprise Suites](./03_INTEGRATIONS/Enterprise_Suites.md)
 
 ### 04. [OPERATIONS](./04_OPERATIONS/)
 Deployment, monitoring, and security.
 - [Deployment](./04_OPERATIONS/Deployment.md)
 - [Security](./04_OPERATIONS/Security.md)
 - [Multi-Tenancy](./04_OPERATIONS/Multi_Tenancy.md)
+- [Monitoring](./04_OPERATIONS/Monitoring.md)
+- [Dooz Deploy](./04_OPERATIONS/Dooz_Deploy.md)
+- [Incident Response](./04_OPERATIONS/Incident_Response.md)
+- [Infrastructure Journey](./04_OPERATIONS/Infrastructure_Journey.md)
 
 ### 05. [TECHNICAL_SPECS](./05_TECHNICAL_SPECS/)
 Low-level specifications and data models.
@@ -36,4 +47,4 @@ Low-level specifications and data models.
 
 ---
 
-*Last updated: 2026-01-15*
+*Last updated: 2026-04-05*

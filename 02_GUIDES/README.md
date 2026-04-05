@@ -19,6 +19,7 @@ If SOPs define **what is allowed**, guides explain **how to do it safely**.
 | [When to Use Thinking Models](When_to_Use_Thinking_Models.md) | Model selection guidance |
 | [Self-Hosted Model Guide](Self_Hosted_Model_Guide.md) | Local inference setup |
 | [Review and Audit Workflows](Review_and_Audit_Workflows.md) | Code review with AI |
+| [Local Development](Local_Development.md) | Setting up local environment |
 
 ---
 

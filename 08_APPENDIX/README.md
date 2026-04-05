@@ -18,6 +18,7 @@ Appendix files are not instructional but contextual.
 | [Model Catalog](Model_Catalog.md) | Available models |
 | [Cost Assumptions](Cost_Assumptions.md) | Pricing reference |
 | [Change Log](Change_Log.md) | Documentation history |
+| [Model Landscape 2026](Model_Landscape_2026.md) | Comprehensive model comparison |
 
 ---
 
