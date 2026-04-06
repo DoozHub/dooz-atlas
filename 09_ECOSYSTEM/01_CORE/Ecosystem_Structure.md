@@ -21,6 +21,7 @@ These are Composer packages that live in `dooz-core/packages/dooz/`:
 | `dooz-compliance` | `dooz/compliance` | Compliance management |
 | `dooz-contracts` | `dooz/contracts` | Contract lifecycle |
 | `dooz-iot` | `dooz/iot` | IoT package |
+| `manual-test-app` | `dooz/manual-test-app` | Test app for boilerplate |
 | `mini-suite` | `dooz/mini-suite` | Mini productivity |
 | `quicky` | `dooz/quicky` | Task & time tracking |
 | `renew` | `dooz/renew` | Subscription renewals |
@@ -90,18 +91,13 @@ Local-only, not forwarded via tunnel:
 | `app-registry` | Central app index |
 | `app-template` | Laravel package template |
 | `boilerplate` | App boilerplate |
-| `manual-test-app` | Test app |
 | `dooz-cartridges` | Public plugin registry |
 
----
-
-### 7. Not Part of Ecosystem
-
-These are external/legacy and should be removed:
+### 7. This Repository
 
 | Folder | Status |
 |--------|--------|
-| `dooz-atlas` | **KEEP** - This repo is dooz-atlas |
+| `dooz-atlas` | **This is dooz-atlas** - documentation & knowledge base |
 
 ---
 
@@ -109,13 +105,13 @@ These are external/legacy and should be removed:
 
 | Category | Count |
 |----------|-------|
-| Laravel Packages (inside dooz-core) | 15 |
+| Laravel Packages (inside dooz-core) | 16 |
 | Standalone Web Apps | 3 |
 | Desktop Apps | 6 |
 | Mobile Apps | 1 |
 | SDKs/Libraries | 5 |
 | Infrastructure | 4 |
-| **Total in root** | **24** |
+| **Total in root** | **22** |
 
 ---
 
