@@ -9,27 +9,27 @@
 
 ### 1. Laravel Packages (Inside dooz-core)
 
-These are Composer packages that run **inside dooz-core** as dependencies:
+These are Composer packages that live in `dooz-core/packages/dooz/`:
 
 | Package | Composer Name | Description |
 |---------|---------------|-------------|
-| `calibration-ops` | `dooz/calibration-ops` | Calibration operations |
-| `core-contracts` | `dooz/core-contracts` | Shared interfaces |
-| `quicky` | `dooz/quicky` | Task & time tracking |
-| `renew` | `dooz/renew` | Subscription renewals |
-| `sdk` | `dooz/sdk` | Developer SDK |
-| `mini-suite` | `dooz/mini-suite` | Mini productivity |
-| `sync` | `dooz/sync` | Cross-tenant sync |
-| `ui` | `dooz/ui` | UI components |
-| `worklog` | `dooz/worklog` | Work logging |
 | `activity-tracker` | `dooz/activity-tracker` | Activity tracking |
 | `calibration` | `dooz/calibration` | Calibration tracking |
+| `calibration-ops` | `dooz/calibration-ops` | Calibration operations |
+| `core-contracts` | `dooz/core-contracts` | Shared interfaces |
 | `dooz-accountant` | `dooz/accountant` | AU bookkeeping |
 | `dooz-compliance` | `dooz/compliance` | Compliance management |
 | `dooz-contracts` | `dooz/contracts` | Contract lifecycle |
 | `dooz-iot` | `dooz/iot` | IoT package |
+| `mini-suite` | `dooz/mini-suite` | Mini productivity |
+| `quicky` | `dooz/quicky` | Task & time tracking |
+| `renew` | `dooz/renew` | Subscription renewals |
+| `sdk` | `dooz/sdk` | Developer SDK |
+| `sync` | `dooz/sync` | Cross-tenant sync |
+| `ui` | `dooz/ui` | UI components |
+| `worklog` | `dooz/worklog` | Work logging |
 
-> These packages live in `dooz-core/packages/dooz/` but are maintained in separate repos for modular development.
+> These packages live in `dooz-core/packages/dooz/` and are installed via Composer path repositories.
 
 ---
 
@@ -109,13 +109,13 @@ These are external/legacy and should be removed:
 
 | Category | Count |
 |----------|-------|
-| Laravel Packages | 16 |
-| Standalone Web Apps | 4 |
+| Laravel Packages (inside dooz-core) | 15 |
+| Standalone Web Apps | 3 |
 | Desktop Apps | 6 |
 | Mobile Apps | 1 |
 | SDKs/Libraries | 5 |
-| Infrastructure | 5 |
-| **Total** | **37** |
+| Infrastructure | 4 |
+| **Total in root** | **24** |
 
 ---
 
