@@ -101,7 +101,7 @@ This section contains documentation for all applications in the Dooz ecosystem, 
 |----------|-------------|
 | [AI_Trends_2026.md](../01_SOP/AI_Trends_2026.md) | Emerging AI patterns and standards |
 | [Model_Landscape_2026.md](../08_APPENDIX/Model_Landscape_2026.md) | Comprehensive model catalog |
-| [Coding_Standards_2026.md](../02_GUIDES/Coding_Standards_2026.md) | Updated coding conventions |
+| [Self-Hosted Model Guide](../02_GUIDES/Self_Hosted_Model_Guide.md) | Local inference setup |
 
 ---
 
@@ -119,6 +119,6 @@ This section contains documentation for all applications in the Dooz ecosystem, 
 
 ---
 
-*Last Updated: January 2026*
+*Last Updated: April 2026*
 *Total Apps: 24*
-*Source: [dooz-ecosystem.code-workspace](../dooz-ecosystem.code-workspace)*
+*See [dooz-ecosystem/README.md](../dooz-ecosystem/README.md) for ecosystem overview*
