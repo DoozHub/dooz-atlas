@@ -22,16 +22,14 @@ These are Composer packages that run **inside dooz-core** as dependencies:
 | `sync` | `dooz/sync` | Cross-tenant sync |
 | `ui` | `dooz/ui` | UI components |
 | `worklog` | `dooz/worklog` | Work logging |
+| `activity-tracker` | `dooz/activity-tracker` | Activity tracking |
+| `calibration` | `dooz/calibration` | Calibration tracking |
+| `dooz-accountant` | `dooz/accountant` | AU bookkeeping |
+| `dooz-compliance` | `dooz/compliance` | Compliance management |
+| `dooz-contracts` | `dooz/contracts` | Contract lifecycle |
+| `dooz-iot` | `dooz/iot` | IoT package |
 
-### Not Yet Integrated (Available to Add)
-
-These exist but are not yet installed in dooz-core:
-- `activity-tracker`
-- `calibration`
-- `dooz-accountant`
-- `dooz-compliance`
-- `dooz-contracts`
-- `dooz-iot`
+> These packages live in `dooz-core/packages/dooz/` but are maintained in separate repos for modular development.
 
 ---
 

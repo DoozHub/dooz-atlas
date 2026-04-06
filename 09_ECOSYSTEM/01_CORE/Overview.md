@@ -13,7 +13,7 @@ The Dooz Ecosystem is a collection of canonical, purpose-built components design
 
 For a complete breakdown of what each project is, how they relate, and how to build further, see:
 - [Ecosystem Structure](Ecosystem_Structure.md)
-- [DEV_DEPLOYMENT.md](../dooz-ecosystem/DEV_DEPLOYMENT.md) - Local deployment guide
+- [DEV_DEPLOYMENT.md](../04_OPERATIONS/DEV_DEPLOYMENT.md) - Local deployment guide
 
 ## Ecosystem Philosophy
 
