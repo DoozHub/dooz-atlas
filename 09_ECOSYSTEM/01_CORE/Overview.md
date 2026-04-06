@@ -9,6 +9,12 @@ The Dooz Ecosystem is a collection of canonical, purpose-built components design
 - **Institutional Memory**: A shared repo for SOPs, prompt libraries, and development frameworks.
 - **Navigator**: A map for developers and operators to understand how components interact and where responsibilities lie.
 
+## Detailed Structure
+
+For a complete breakdown of what each project is, how they relate, and how to build further, see:
+- [Ecosystem Structure](Ecosystem_Structure.md)
+- [DEV_DEPLOYMENT.md](../dooz-ecosystem/DEV_DEPLOYMENT.md) - Local deployment guide
+
 ## Ecosystem Philosophy
 
 1. **Canonical Components**: Every repository in the `dooz-ecosystem` represents a long-lived, first-class citizen with a strictly defined intent.
