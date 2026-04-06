@@ -121,4 +121,4 @@ This section contains documentation for all applications in the Dooz ecosystem, 
 
 *Last Updated: April 2026*
 *Total Apps: 24*
-*See [dooz-ecosystem/README.md](../dooz-ecosystem/README.md) for ecosystem overview*
+*See [Ecosystem Structure](../09_ECOSYSTEM/01_CORE/Ecosystem_Structure.md) for ecosystem overview*

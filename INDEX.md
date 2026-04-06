@@ -111,25 +111,30 @@
 | Category | Apps |
 |----------|------|
 | **Core Platform** | [Dooz Core](10_APPS/Dooz_Core.md) |
-| **AI & Knowledge** | [Dooz Brain](10_APPS/Dooz_Brain.md), [Dooz Copilot](10_APPS/Dooz_Copilot.md), [Dooz Oracle](10_APPS/Dooz_Oracle.md) |
-| **Productivity** | [Dooz Hub](10_APPS/Dooz_Hub.md), [Dooz Pilot](10_APPS/Dooz_Pilot.md), [Dooz PM Suite](10_APPS/Dooz_PM_Suite.md) |
-| **Meeting & Decision** | [Dooz Meet](10_APPS/Dooz_Meet.md), [Dooz Hindsight](10_APPS/Dooz_Hindsight.md) |
-| **Development** | [Dooz App Builder](10_APPS/Dooz_App_Builder.md), [Dooz Web Builder](10_APPS/Dooz_Website_Builder.md), [Jules on Steroids](10_APPS/Jules_on_Steroids.md) |
-| **Utilities** | [Quicky](10_APPS/Quicky.md), [Worklog](10_APPS/Worklog.md) |
-| **Infrastructure** | [Dooz Sync](10_APPS/Dooz_Sync.md), [Dooz Bridge](10_APPS/Dooz_Bridge.md), [Dooz Cartridges](10_APPS/Dooz_Cartridges.md) |
-| **AI Framework** | [YANTRA Agent](10_APPS/Dooz_Yantra.md), [AI Router](10_APPS/Dooz_AI_Router.md), [NONOMOUS AI](10_APPS/NONOMOUS_AI/README.md) |
-| **AI Control** | [Oracle Confidence](10_APPS/Dooz_Oracle.md) |
-| **Specialized** | [Dooz Ballpark AI](10_APPS/Dooz_Ballpark_AI.md), [Dooz Perspective](10_APPS/Dooz_Perspective.md) |
+| **AI & Knowledge** | [Dooz Brain](10_APPS/Dooz_Brain.md) |
+| **Desktop** | [Dooz Hub](10_APPS/Dooz_Hub.md), [Dooz Bridge](10_APPS/Dooz_Bridge.md), [Dooz Yantra](10_APPS/Dooz_Yantra.md) |
+| **Web Services** | [Dooz PM Suite](10_APPS/Dooz_PM_Suite.md), [Dooz Perspective](10_APPS/Dooz_Perspective.md) |
+| **Builders** | [Dooz App Builder](10_APPS/Dooz_App_Builder.md), [Dooz Web Builder](10_APPS/Dooz_Website_Builder.md) |
+| **Core Packages** | [Quicky](10_APPS/Quicky.md), [Worklog](10_APPS/Worklog.md) |
+| **Infrastructure** | [Dooz Sync](10_APPS/Dooz_Sync.md), [Dooz Cartridges](10_APPS/Dooz_Cartridges.md) |
+| **AI Tools** | [AI Router](10_APPS/Dooz_AI_Router.md), [Bun SDK](10_APPS/Dooz_Bun_SDK.md), [Intent Language](10_APPS/Dooz_Intent_Lang.md) |
 | **IoT** | [Dooz IoT](10_APPS/Dooz_IoT.md) |
-| **SDKs** | [Bun SDK](10_APPS/Dooz_Bun_SDK.md), [Intent Language](10_APPS/Dooz_Intent_Lang.md) |
-| **Experiments** | [IntentFill](10_APPS/IntentFill.md), [PennyWise](10_APPS/PennyWise.md), [Camera.py](10_APPS/Camera_py.md), [Brain MD](10_APPS/Brain_MD.md), [CookieJar](10_APPS/CookieJar.md), [De-Hype](10_APPS/De_Hype.md), [CalcSheet](10_APPS/CalcSheet.md) |
 
 ---
 
-## 🗺️ App Registry
+## 🗺️ App Registry & Design
 
 - [App Registry](10_APPS/App_Registry.md)
 - [Neo-Analog Design System](10_APPS/Neo_Analog.md)
+
+---
+
+## 🏗️ Ecosystem Structure
+
+See [Ecosystem Structure](09_ECOSYSTEM/01_CORE/Ecosystem_Structure.md) for detailed breakdown of:
+- What's inside dooz-core vs standalone services
+- How packages, desktop apps, and mobile apps are organized
+- How to add new projects to the ecosystem
 
 ---
 
