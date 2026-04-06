@@ -11,24 +11,26 @@
 
 These are Composer packages that live in `dooz-core/packages/dooz/`:
 
-| Package | Composer Name | Description |
-|---------|---------------|-------------|
-| `activity-tracker` | `dooz/activity-tracker` | Activity tracking |
-| `calibration` | `dooz/calibration` | Calibration tracking |
-| `calibration-ops` | `dooz/calibration-ops` | Calibration operations |
-| `core-contracts` | `dooz/core-contracts` | Shared interfaces |
-| `dooz-accountant` | `dooz/accountant` | AU bookkeeping |
-| `dooz-compliance` | `dooz/compliance` | Compliance management |
-| `dooz-contracts` | `dooz/contracts` | Contract lifecycle |
-| `dooz-iot` | `dooz/iot` | IoT package |
-| `manual-test-app` | `dooz/manual-test-app` | Test app for boilerplate |
-| `mini-suite` | `dooz/mini-suite` | Mini productivity |
-| `quicky` | `dooz/quicky` | Task & time tracking |
-| `renew` | `dooz/renew` | Subscription renewals |
-| `sdk` | `dooz/sdk` | Developer SDK |
-| `sync` | `dooz/sync` | Cross-tenant sync |
-| `ui` | `dooz/ui` | UI components |
-| `worklog` | `dooz/worklog` | Work logging |
+| Package | Composer Name | Description | Status |
+|---------|---------------|-------------|--------|
+| `activity-tracker` | `dooz/activity-tracker` | Activity tracking | ✅ In composer.json |
+| `app-template` | `dooz/app-template` | Package template | ⚪ Template |
+| `boilerplate` | `dooz/boilerplate` | App boilerplate | ⚪ Template |
+| `calibration` | `dooz/calibration` | Calibration tracking | ✅ In composer.json |
+| `calibration-ops` | `dooz/calibration-ops` | Calibration operations | ✅ In composer.json |
+| `core-contracts` | `dooz/core-contracts` | Shared interfaces | ✅ In composer.json |
+| `dooz-accountant` | `dooz/accountant` | AU bookkeeping | ✅ In composer.json |
+| `dooz-compliance` | `dooz/compliance` | Compliance management | ✅ In composer.json |
+| `dooz-contracts` | `dooz/contracts` | Contract lifecycle | ✅ In composer.json |
+| `dooz-iot` | `dooz/iot` | IoT package | ✅ In composer.json |
+| `manual-test-app` | `dooz/manual-test-app` | Test app for boilerplate | ⚪ Not installed |
+| `mini-suite` | `dooz/mini-suite` | Mini productivity | ✅ In composer.json |
+| `quicky` | `dooz/quicky` | Task & time tracking | ✅ In composer.json |
+| `renew` | `dooz/renew` | Subscription renewals | ✅ In composer.json |
+| `sdk` | `dooz/sdk` | Developer SDK | ✅ In composer.json |
+| `sync` | `dooz/sync` | Cross-tenant sync | ✅ In composer.json |
+| `ui` | `dooz/ui` | UI components | ✅ In composer.json |
+| `worklog` | `dooz/worklog` | Work logging | ✅ In composer.json |
 
 > These packages live in `dooz-core/packages/dooz/` and are installed via Composer path repositories.
 
