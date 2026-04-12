@@ -24,6 +24,30 @@ History of significant changes to this documentation.
 
 ---
 
+## 2026-04-12: Dooz Core v1.1.0 Documentation Update
+
+### Added
+- Documented **Notifications System** — Multi-channel notifications (email, push, SMS, in-app)
+- Documented **File Storage System** — Multi-tenant file storage with S3 support
+- Documented **API Documentation Portal** — Auto-generated OpenAPI/Swagger docs
+- Documented **Audit Logging System** — Complete activity tracking
+- Documented **Global Search System** — Cross-model search with fuzzy matching
+
+### Changed
+- Updated [Dooz_Core.md](../10_APPS/Dooz_Core.md) to reflect v1.1.0 features
+- Updated tech stack from Laravel 11 → Laravel 12
+- Updated roadmap phases to mark Phase 3 (Core Infrastructure) as complete
+- Updated feature matrix with new v1.1.0 capabilities
+
+### Notes
+- Dooz Core v1.1.0 released 2026-04-11
+- 10 new database tables added
+- 25+ new PHP files
+- 1,500+ lines of code
+- All features follow tenant isolation pattern
+
+---
+
 ## Template for Future Entries
 
 ```markdown

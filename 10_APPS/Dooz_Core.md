@@ -32,6 +32,11 @@ Dooz Core is the multi-tenant SaaS platform that provides authentication, author
 | **Subscription Billing** | Stripe-powered billing with metered usage |
 | **Webhook System** | Event-driven notifications with retry logic |
 | **Sync API** | E2E encrypted sync for local-first apps |
+| **Notifications** | Multi-channel notifications (email, push, SMS, in-app) |
+| **File Storage** | Multi-tenant file storage with S3 support, versioning, share links |
+| **API Documentation** | Auto-generated OpenAPI/Swagger docs with interactive UI |
+| **Audit Logging** | Complete activity tracking with entity change tracking |
+| **Global Search** | Cross-model fuzzy search across Tenant, User, App models |
 
 ---
 
@@ -101,28 +106,36 @@ For managed hosting on Dooz Cloud:
 - [x] App navigation registry
 - [x] Settings framework
 
-### Phase 3: Billing
+### Phase 3: Core Infrastructure ✅ (v1.1.0 - 2026-04-11)
+- [x] Multi-channel notifications system (email, push, SMS, in-app)
+- [x] File storage with S3 support, versioning, share links
+- [x] Auto-generated API documentation (OpenAPI/Swagger)
+- [x] Comprehensive audit logging with entity tracking
+- [x] Global search across models
+- [x] API rate limiting foundation
+
+### Phase 4: Billing
 - [ ] Stripe integration
 - [ ] Subscription management
 - [ ] Usage metering
 - [ ] Invoice generation
 - [ ] Tax handling
 
-### Phase 4: Sync Platform
+### Phase 5: Sync Platform
 - [ ] Device registration
 - [ ] Chunk-based sync
 - [ ] E2E encryption
 - [ ] Conflict resolution
 
-### Phase 5: Analytics
+### Phase 6: Analytics
 - [ ] Usage dashboards
 - [ ] App performance metrics
 - [ ] Tenant insights
 - [ ] Custom reports
 
-### Phase 6: Enterprise
+### Phase 7: Enterprise
 - [ ] SSO/SAML integration
-- [ ] Audit logging
+- [x] Audit logging ✅
 - [ ] Advanced compliance
 - [ ] Custom domains
 - [ ] White-labeling
@@ -133,7 +146,7 @@ For managed hosting on Dooz Cloud:
 
 | Layer | Technology |
 |-------|------------|
-| Framework | Laravel 11 |
+| Framework | Laravel 12 |
 | Database | MySQL/PostgreSQL |
 | Cache | Redis |
 | Queue | Redis/SQS |

@@ -45,9 +45,7 @@ These run independently with their own ports:
 | `dooz-core` | Laravel 12 | 8000* | Main platform (needs PHP/PostgreSQL) |
 | `dooz-pm-suite` | Bun + Hono | 3000 | Project management |
 | `dooz-perspective` | Bun + Hono | 3003 | Multi-LLM verification |
-| `dooz-website-builder` | Next.js 15 | 3000* | AI website generation |
-
-*Port conflict - needs resolution
+| `dooz-website-builder` | Next.js 15 | 3001 | AI website generation |
 
 ---
 
@@ -83,6 +81,7 @@ Local-only, not forwarded via tunnel:
 | `dooz-bun-sdk` | TypeScript | SDK for Bun/Node |
 | `dooz-intent-lang` | PHP | DIL transpiler |
 | `dooz-veto` | Rust | Constraint engine |
+| `dooz-orchestrator` | Rust | AI agent orchestration & QA pipeline |
 
 ---
 
@@ -107,14 +106,30 @@ Local-only, not forwarded via tunnel:
 
 | Category | Count |
 |----------|-------|
-| Laravel Packages (inside dooz-core) | 16 |
+| Laravel Packages (inside dooz-core) | 18 |
 | Standalone Web Apps | 3 |
 | Desktop Apps | 6 |
 | Mobile Apps | 1 |
-| SDKs/Libraries | 5 |
+| SDKs/Libraries | 6 |
 | Infrastructure | 4 |
-| **Total in root** | **22** |
+| **Total in root** | **23** |
 
 ---
 
-*Last updated: 2026-04-07*
+## Port Allocation Standard
+
+To avoid conflicts, use this port allocation:
+
+| Port Range | Service Type |
+|------------|--------------|
+| 8000 | dooz-core (Laravel) |
+| 3000 | dooz-pm-suite (Bun + Hono) |
+| 3001 | dooz-website-builder (Next.js) |
+| 3003 | dooz-perspective (Bun + Hono) |
+| 3005-3010 | Reserved for future web services |
+| 4000-4100 | Desktop app dev servers |
+| 5000-5100 | Mobile app dev servers |
+
+---
+
+*Last updated: 2026-04-12*

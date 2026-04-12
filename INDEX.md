@@ -140,5 +140,5 @@ See [Ecosystem Structure](09_ECOSYSTEM/01_CORE/Ecosystem_Structure.md) for detai
 
 **Rule:** If it's not documented here, it's not an approved practice.
 
-**Last Updated:** April 2026
-**Version:** 2026.2
+**Last Updated:** April 12, 2026
+**Version:** 2026.3 — Updated for Dooz Core v1.1.0
