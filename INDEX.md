@@ -7,10 +7,18 @@
 
 ## 🚀 Start Here (Mandatory Reading)
 
-1. [AI Usage SOP](01_SOP/AI_Usage_SOP.md)
-2. [Model Routing Policy](01_SOP/Model_Routing_Policy.md)
-3. [Task Classification Framework](03_FRAMEWORKS/Task_Classification_Framework.md)
-4. [2026 AI Trends & Standards](01_SOP/AI_Trends_2026.md)
+### New to DOOZ?
+1. **[Ecosystem Overview](../README.md)** — What DOOZ is and how to get started
+2. **[Contributing Guide](../CONTRIBUTING.md)** — How to contribute to the ecosystem
+
+### Working with AI?
+3. [AI Usage SOP](01_SOP/AI_Usage_SOP.md)
+4. [Model Routing Policy](01_SOP/Model_Routing_Policy.md)
+5. [Task Classification Framework](03_FRAMEWORKS/Task_Classification_Framework.md)
+6. [2026 AI Trends & Standards](01_SOP/AI_Trends_2026.md)
+
+### Execution Plans
+7. [Implementation Plans](13_PLANS/README.md) — Agentic execution blueprint
 
 ---
 
@@ -20,8 +28,7 @@
 - [Using Agentic Tools (Antigravity, Cursor, Claude Code)](02_GUIDES/Using_Agentic_Tools.md)
 - [Prompt Library](04_PROMPT_LIBRARY/README.md)
 - [Mechanical vs Cognitive Tasks](03_FRAMEWORKS/Architecture_vs_Execution.md)
-- [Local Development](02_GUIDES/Local_Development.md)
-- [Review and Audit Workflows](02_GUIDES/Review_and_Audit_Workflows.md)
+- [2026 Coding Standards](02_GUIDES/Coding_Standards_2026.md)
 
 ---
 
@@ -30,6 +37,7 @@
 - [Architecture vs Execution Framework](03_FRAMEWORKS/Architecture_vs_Execution.md)
 - [When to Use Thinking Models](02_GUIDES/When_to_Use_Thinking_Models.md)
 - [Agentic Control Framework](03_FRAMEWORKS/Agentic_Control_Framework.md)
+- [Multi-Provider LLM Routing](02_GUIDES/LLM_Routing_Guide.md)
 
 ---
 
@@ -38,7 +46,7 @@
 - [Review & Audit Workflows](02_GUIDES/Review_and_Audit_Workflows.md)
 - [Cost Governance](01_SOP/Cost_Governance.md)
 - [Logging & Observability](07_IMPLEMENTATION/Logging_and_Observability.md)
-- [Guardrails and Permissions](06_UI_AGENTIC_AI/Guardrails_and_Permissions.md)
+- [Oracle Confidence Scoring](06_UI_AGENTIC_AI/Oracle_Confidence_Scoring.md)
 
 ---
 
@@ -47,8 +55,7 @@
 - [UI Agentic AI Principles](06_UI_AGENTIC_AI/README.md)
 - [Agent Metadata Schema](06_UI_AGENTIC_AI/Agent_Metadata_Schema.md)
 - [Token Tracking & Cost Visualization](06_UI_AGENTIC_AI/Token_Tracking_Design.md)
-- [Cost Visualization](06_UI_AGENTIC_AI/Cost_Visualization.md)
-- [Reference Architecture](06_UI_AGENTIC_AI/Reference_Architecture.md)
+- [YANTRA Agent Framework](06_UI_AGENTIC_AI/YANTRA_Framework.md)
 
 ---
 
@@ -57,8 +64,7 @@
 - [Lessons Learned](05_KNOWLEDGE_BASE/Lessons_Learned.md)
 - [Failure Case Studies](05_KNOWLEDGE_BASE/Failure_Case_Studies.md)
 - [Cost Explosion Postmortems](05_KNOWLEDGE_BASE/Cost_Explosion_Postmortems.md)
-- [Tool Comparison](05_KNOWLEDGE_BASE/Tool_Comparison.md)
-- [Model Behavior Notes](05_KNOWLEDGE_BASE/Model_Behavior_Notes.md)
+- [Decision Intelligence (Hindsight)](05_KNOWLEDGE_BASE/Decision_Intelligence.md)
 
 ---
 
@@ -73,36 +79,50 @@
 
 ## 🏗️ Ecosystem Architecture
 
-- [Ecosystem Overview](09_ECOSYSTEM/01_CORE/Overview.md)
-- [System Architecture](09_ECOSYSTEM/01_CORE/Architecture.md)
-- [Data Model](09_ECOSYSTEM/05_TECHNICAL_SPECS/Data_Model.md)
-- [API Contracts](09_ECOSYSTEM/05_TECHNICAL_SPECS/API_Contracts.md)
-- [Multi-Tenancy](09_ECOSYSTEM/04_OPERATIONS/Multi_Tenancy.md)
-- [Developer Guide](09_ECOSYSTEM/02_DEVELOPMENT/Developer_Guide.md)
-- [Coding Standards](09_ECOSYSTEM/02_DEVELOPMENT/Coding_Standards.md)
-- [Intent Language (DIL)](09_ECOSYSTEM/05_TECHNICAL_SPECS/Intent_Language.md)
+### C4 Architecture Diagrams
+- **[System Context](09_ECOSYSTEM/C4_Context.md)** — High-level ecosystem view
+- **[Container Diagram](09_ECOSYSTEM/C4_Container.md)** — Technology choices and containers
+- **[Component Diagrams](09_ECOSYSTEM/C4_Components.md)** — Internal structure of key modules
+
+### Architecture Decision Records (ADRs)
+- [ADR-001: Multi-Tenancy Strategy](09_ECOSYSTEM/ADRs/ADR-001_Multi_Tenancy_Strategy.md)
+- [ADR-002: Desktop Technology](09_ECOSYSTEM/ADRs/ADR-002_Desktop_Technology.md)
+- [ADR-003: Runtime Selection](09_ECOSYSTEM/ADRs/ADR-003_Runtime_Selection.md)
+- [ADR-004: Event Architecture](09_ECOSYSTEM/ADRs/ADR-004_Event_Architecture.md)
+- [ADR-005: LLM Routing](09_ECOSYSTEM/ADRs/ADR-005_LLM_Abstraction.md)
+- [ADR-006: Knowledge Management](09_ECOSYSTEM/ADRs/ADR-006_Knowledge_Management.md)
+
+### System Documentation
+- [Ecosystem Overview](09_ECOSYSTEM/Overview.md)
+- [System Architecture](09_ECOSYSTEM/Architecture.md)
+- [Data Flows](09_ECOSYSTEM/Data_Flows.md) — How data moves through the system
+- [Data Model](09_ECOSYSTEM/Data_Model.md)
+- [API Contracts](09_ECOSYSTEM/API_Contracts.md)
+- [Multi-Tenancy](09_ECOSYSTEM/Multi_Tenancy.md)
+- [Developer Guide](09_ECOSYSTEM/Developer_Guide.md)
+- [Coding Standards](09_ECOSYSTEM/Coding_Standards.md)
+- [Intent Language (DIL)](09_ECOSYSTEM/Intent_Language.md)
 
 ---
 
 ## 🔌 Integration & Components
 
-- [Brain Integration](09_ECOSYSTEM/03_INTEGRATIONS/Brain_Integration.md)
-- [Dooz Sync](09_ECOSYSTEM/03_INTEGRATIONS/Dooz_Sync_Integration.md)
-- [Cartridge Guide](09_ECOSYSTEM/03_INTEGRATIONS/Cartridge_Guide.md)
-- [Intent Language](09_ECOSYSTEM/05_TECHNICAL_SPECS/Intent_Language.md)
-- [Webhook Patterns](09_ECOSYSTEM/03_INTEGRATIONS/Webhook_Patterns.md)
-- [Multi-SDK Architecture](09_ECOSYSTEM/03_INTEGRATIONS/Multi_SDK_Architecture.md)
+- [Brain Integration](09_ECOSYSTEM/Brain_Integration.md)
+- [Dooz Sync](09_ECOSYSTEM/Dooz_Sync_Integration.md)
+- [Cartridge Guide](09_ECOSYSTEM/Cartridge_Guide.md)
+- [Intent Language](09_ECOSYSTEM/Intent_Language.md)
+- [Webhook Patterns](09_ECOSYSTEM/Webhook_Patterns.md)
+- [AI Router Integration](09_ECOSYSTEM/AI_Router_Integration.md)
 
 ---
 
 ## 🚀 Operations
 
-- [Deployment](09_ECOSYSTEM/04_OPERATIONS/Deployment.md)
-- [Dooz Deploy](09_ECOSYSTEM/04_OPERATIONS/Dooz_Deploy.md)
-- [Monitoring](09_ECOSYSTEM/04_OPERATIONS/Monitoring.md)
-- [Security](09_ECOSYSTEM/04_OPERATIONS/Security.md)
-- [Incident Response](09_ECOSYSTEM/04_OPERATIONS/Incident_Response.md)
-- [Infrastructure Journey](09_ECOSYSTEM/04_OPERATIONS/Infrastructure_Journey.md)
+- [Deployment](09_ECOSYSTEM/Deployment.md)
+- [Dooz Deploy](09_ECOSYSTEM/Dooz_Deploy.md)
+- [Monitoring](09_ECOSYSTEM/Monitoring.md)
+- [Security](09_ECOSYSTEM/Security.md)
+- [Incident Response](09_ECOSYSTEM/Incident_Response.md)
 
 ---
 
@@ -111,34 +131,29 @@
 | Category | Apps |
 |----------|------|
 | **Core Platform** | [Dooz Core](10_APPS/Dooz_Core.md) |
-| **AI & Knowledge** | [Dooz Brain](10_APPS/Dooz_Brain.md) |
-| **Desktop** | [Dooz Hub](10_APPS/Dooz_Hub.md), [Dooz Bridge](10_APPS/Dooz_Bridge.md), [Dooz Yantra](10_APPS/Dooz_Yantra.md) |
-| **Web Services** | [Dooz PM Suite](10_APPS/Dooz_PM_Suite.md), [Dooz Perspective](10_APPS/Dooz_Perspective.md) |
-| **Builders** | [Dooz App Builder](10_APPS/Dooz_App_Builder.md), [Dooz Web Builder](10_APPS/Dooz_Website_Builder.md) |
-| **Core Packages** | [Quicky](10_APPS/Quicky.md), [Worklog](10_APPS/Worklog.md) |
-| **Infrastructure** | [Dooz Sync](10_APPS/Dooz_Sync.md), [Dooz Cartridges](10_APPS/Dooz_Cartridges.md) |
-| **AI Tools** | [AI Router](10_APPS/Dooz_AI_Router.md), [Bun SDK](10_APPS/Dooz_Bun_SDK.md), [Intent Language](10_APPS/Dooz_Intent_Lang.md) |
+| **AI & Knowledge** | [Dooz Brain](10_APPS/Dooz_Brain.md), [Dooz Copilot](10_APPS/Dooz_Copilot.md), [Dooz Oracle](10_APPS/Dooz_Oracle.md) |
+| **Productivity** | [Dooz Hub](10_APPS/Dooz_Hub.md), [Dooz Pilot](10_APPS/Dooz_Pilot.md), [Dooz PM Suite](10_APPS/Dooz_PM_Suite.md) |
+| **Meeting & Decision** | [Dooz Meet](10_APPS/Dooz_Meet.md), [Dooz Hindsight](10_APPS/Dooz_Hindsight.md) |
+| **Development** | [Dooz App Builder](10_APPS/Dooz_App_Builder.md), [Dooz Web Builder](10_APPS/Dooz_Website_Builder.md), [Jules on Steroids](10_APPS/Jules_on_Steroids.md) |
+| **Utilities** | [Quicky](10_APPS/Quicky.md), [Worklog](10_APPS/Worklog.md) |
+| **Infrastructure** | [Dooz Sync](10_APPS/Dooz_Sync.md), [Dooz Bridge](10_APPS/Dooz_Bridge.md), [Dooz Cartridges](10_APPS/Dooz_Cartridges.md) |
+| **AI Framework** | [YANTRA Agent](10_APPS/Dooz_Yantra.md), [AI Router](10_APPS/Dooz_AI_Router.md), [NONOMOUS AI](10_APPS/NONOMOUS_AI/README.md) |
+| **AI Control** | [Oracle Confidence](10_APPS/Dooz_Oracle.md) |
+| **Specialized** | [Dooz Ballpark AI](10_APPS/Dooz_Ballpark_AI.md), [Dooz Perspective](10_APPS/Dooz_Perspective.md) |
 | **IoT** | [Dooz IoT](10_APPS/Dooz_IoT.md) |
+| **SDKs** | [Bun SDK](10_APPS/Dooz_Bun_SDK.md), [Intent Language](10_APPS/Dooz_Intent_Lang.md) |
+| **Experiments** | [IntentFill](10_APPS/IntentFill.md), [PennyWise](10_APPS/PennyWise.md), [Camera.py](10_APPS/Camera_py.md), [Brain MD](10_APPS/Brain_MD.md), [CookieJar](10_APPS/CookieJar.md), [De-Hype](10_APPS/De_Hype.md), [CalcSheet](10_APPS/CalcSheet.md) |
 
 ---
 
-## 🗺️ App Registry & Design
+## 🗺️ App Registry
 
 - [App Registry](10_APPS/App_Registry.md)
 - [Neo-Analog Design System](10_APPS/Neo_Analog.md)
 
 ---
 
-## 🏗️ Ecosystem Structure
-
-See [Ecosystem Structure](09_ECOSYSTEM/01_CORE/Ecosystem_Structure.md) for detailed breakdown of:
-- What's inside dooz-core vs standalone services
-- How packages, desktop apps, and mobile apps are organized
-- How to add new projects to the ecosystem
-
----
-
 **Rule:** If it's not documented here, it's not an approved practice.
 
-**Last Updated:** April 12, 2026
-**Version:** 2026.3 — Updated for Dooz Core v1.1.0
+**Last Updated:** January 2026
+**Version:** 2026.1

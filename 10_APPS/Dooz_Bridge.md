@@ -1,71 +1,81 @@
-# dooz-bridge
+# desktop-bridge
 
-> Inter-app communication bridge for the Dooz ecosystem
+> CLI tool wrapper with GUI - wraps interactive CLI tools in a graphical interface
 
 ## Overview
 
-Dooz Bridge provides the event-driven communication layer that connects all Dooz applications and services.
+Dooz Bridge is a Tauri 2.0 + React desktop application that wraps interactive CLI tools (Aider, Ollama, Claude CLI, etc.) in a graphical interface. It spawns pseudo-terminals via Rust and uses grammar-based pattern matching to detect CLI states.
 
 ## Architecture
 
 ```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  dooz-core  │    │  dooz-hub   │    │  dooz-brain │
-└──────┬──────┘    └──────┬──────┘    └──────┬──────┘
-       │                  │                  │
-       └──────────────────┼──────────────────┘
-                          │
-                   ┌──────▼──────┐
-                   │ dooz-bridge │
-                   │  (Events)   │
-                   └──────┬──────┘
-                          │
-       ┌──────────────────┼──────────────────┐
-       │                  │                  │
-┌──────▼──────┐    ┌──────▼──────┐    ┌──────▼──────┐
-│   quicky    │    │   worklog   │    │ calibration │
-└─────────────┘    └─────────────┘    └─────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                    DESKTOP BRIDGE                           │
+├─────────────────────────────────────────────────────────────┤
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
+│  │   Aider     │  │   Ollama    │  │ Claude CLI  │         │
+│  │   (CLI)     │  │   (CLI)     │  │   (CLI)     │         │
+│  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘         │
+│         │                │                │                 │
+│  ┌──────┴────────────────┴────────────────┴──────┐         │
+│  │            PTY Engine (Rust)                   │         │
+│  │     Grammar-based pattern matching            │         │
+│  └──────┬───────────────────────────────────────┘         │
+│         │                                                  │
+│  ┌──────▼──────┐                                          │
+│  │    GUI      │  React + TypeScript UI                  │
+│  │  (Tauri)    │                                          │
+│  └─────────────┘                                          │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ## Features
 
-### Event Bus
-- Pub/sub messaging between apps
-- Topic-based routing
-- Message persistence
-- Replay capabilities
+### CLI Wrapping
+- Wraps Aider, Ollama, Claude CLI, and other CLI tools
+- Pseudo-terminal spawning via Rust
+- Grammar-based pattern matching for CLI state detection
+- Terminal output capture and display
 
-### Cross-Tenant Messaging
-- Secure tenant isolation
-- Inter-organization events (with consent)
-- Federated sync
+### GUI Interface
+- React + TypeScript frontend
+- Terminal emulation
+- Command palette
+- Session management
 
-### Webhook Management
-- Outbound webhook delivery
-- Retry with backoff
-- Delivery status tracking
-- Signature verification
-
-### Real-time Sync
-- WebSocket connections
-- Presence awareness
-- Conflict resolution
+### Integration
+- Works with desktop-hub as launcher tile
+- Connects to dooz-core for context
+- Brain MCP integration for context awareness
 
 ## Tech Stack
 
-- **Language**: TypeScript
-- **Transport**: WebSockets, HTTP/2
-- **Queue**: Redis Streams / In-memory
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | React 18, TypeScript |
+| **Backend** | Rust (Tauri) |
+| **PTY** | Rust pseudo-terminal |
+| **Pattern Matching** | Grammar-based state detection |
+
+## Supported Tools
+
+| Tool | Status |
+|------|--------|
+| Aider | ✅ Supported |
+| Ollama | ✅ Supported |
+| Claude CLI | ✅ Supported |
 
 ## Status
 
 | Feature | Status |
 |---------|--------|
-| Event Bus | ✅ Complete |
-| Webhooks | ✅ Complete |
-| Real-time | 🟡 In Progress |
-| Federation | ⚪ Planned |
+| CLI Wrapping | ✅ Complete |
+| Pattern Matching | ✅ Complete |
+| GUI Interface | ✅ Complete |
+| Multi-tool Support | 🟡 In Progress |
 
 ---
 
-*Repository: DoozHub/dooz-bridge*
+> **Naming Convention**: This app is part of the `desktop-*` tier (desktop applications).
+> Repository: [DoozHub/desktop-bridge](https://github.com/DoozHub/desktop-bridge)
+> Last Updated: 2026-04-14

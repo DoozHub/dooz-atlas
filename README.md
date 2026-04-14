@@ -1,8 +1,13 @@
 # Dooz Atlas
 
-> **Single source of truth** for DoozieSoft's AI/Agentic Development, Ecosystem Architecture, and Application Documentation.
+[![CI](https://github.com/DoozHub/dooz-ecosystem/actions/workflows/dooz-atlas-ci.yml/badge.svg)](https://github.com/DoozHub/dooz-ecosystem/actions/workflows/dooz-atlas-ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Dooz Atlas is DoozieSoft's central knowledge base containing:
+dooz-atlas is a documentation repository containing DoozieSoft's internal knowledge base, organized as markdown files across 11 sections covering SOPs, guides, frameworks, prompt libraries, implementation patterns, and ecosystem architecture. It includes a React + Vite documentation viewer that renders the markdown content with navigation.
+
+---
+
+The **Dooz Atlas** is DoozieSoft's central knowledge base containing:
 - **AI/Agentic Development** — SOPs, frameworks, prompts, and best practices
 - **Ecosystem Documentation** — Architecture, APIs, and integration guides
 - **Application Docs** — Individual app specifications and guides
@@ -11,15 +16,15 @@ Dooz Atlas is DoozieSoft's central knowledge base containing:
 
 | Section | Description |
 |---------|-------------|
-| [01_SOP](01_SOP/) | Standard Operating Procedures (mandatory rules) |
+| [01_SOP](01_SOP/) | Standard Operating Procedures |
 | [02_GUIDES](02_GUIDES/) | How-to guides and tutorials |
-| [03_FRAMEWORKS](03_FRAMEWORKS/) | Decision frameworks and mental models |
-| [04_PROMPT_LIBRARY](04_PROMPT_LIBRARY/) | Approved, versioned prompts |
-| [05_KNOWLEDGE_BASE](05_KNOWLEDGE_BASE/) | Lessons, failures, and case studies |
-| [06_UI_AGENTIC_AI](06_UI_AGENTIC_AI/) | UI/UX patterns for agentic systems |
-| [07_IMPLEMENTATION](07_IMPLEMENTATION/) | Technical implementation guides |
-| [08_APPENDIX](08_APPENDIX/) | Reference materials, catalogs, glossary |
-| [09_ECOSYSTEM](09_ECOSYSTEM/) | Ecosystem architecture & development |
+| [03_FRAMEWORKS](03_FRAMEWORKS/) | Decision frameworks |
+| [04_PROMPT_LIBRARY](04_PROMPT_LIBRARY/) | Reusable prompts |
+| [05_KNOWLEDGE_BASE](05_KNOWLEDGE_BASE/) | Lessons and case studies |
+| [06_UI_AGENTIC_AI](06_UI_AGENTIC_AI/) | UI/UX for agentic systems |
+| [07_IMPLEMENTATION](07_IMPLEMENTATION/) | Technical implementations |
+| [08_APPENDIX](08_APPENDIX/) | Reference materials |
+| [09_ECOSYSTEM](09_ECOSYSTEM/) | Ecosystem architecture & guides |
 | [10_APPS](10_APPS/) | Application documentation |
 
 ## 🖥️ Docs Viewer

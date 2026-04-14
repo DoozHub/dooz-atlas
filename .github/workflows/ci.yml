@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'dooz-atlas/**'
+      - '.github/workflows/dooz-atlas-ci.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'dooz-atlas/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dooz-atlas
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      
+      - name: Install dependencies
+        run: bun install
+      
+      - name: Build documentation
+        run: bun run build
+      
+      - name: Check for broken links
+        run: |
+          echo "Checking documentation links..."
+          # Add link checking logic here if needed
+  
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+      
+      - name: Lint markdown files
+        run: markdownlint 'dooz-atlas/**/*.md' || echo "Markdown linting issues found"

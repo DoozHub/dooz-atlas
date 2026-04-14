@@ -1,4 +1,4 @@
-# @dooz/ai-router
+# lib-ai-router
 
 > Multi-provider LLM router with smart routing and fallback support
 
@@ -10,11 +10,11 @@ The AI Router provides intelligent routing of LLM requests across multiple provi
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                      DOOZ AI ROUTER                          │
+│ LIB AI ROUTER                                                │
 ├──────────────────────────────────────────────────────────────┤
-│  🔀 Multi-provider support │  🧠 Smart routing               │
-│  ⛓️ Fallback chain         │  🔄 Streaming support           │
-│  📊 Usage tracking         │  ⚡ Latency optimization        │
+│ 🔀 Multi-provider support │ 🧠 Smart routing                 │
+│ ⛓️ Fallback chain          │ 🔄 Streaming support             │
+│ 📊 Usage tracking          │ ⚡ Latency optimization           │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -34,6 +34,8 @@ The AI Router provides intelligent routing of LLM requests across multiple provi
 
 ```bash
 bun add @dooz/ai-router
+# or
+npm install @dooz/ai-router
 ```
 
 ---
@@ -124,12 +126,14 @@ const available = await router.checkAvailability();
 
 ---
 
-## Related Documentation Routing
+## Related Documentation
 
 - [Model Policy](../01_SOP/Model_Routing_Policy.md)
 - [Model Catalog](../08_APPENDIX/Model_Catalog.md)
-- [2026 AI Model Landscape](../08_APPENDIX/Model_Landscape_2026.md)
+- [Component Catalog](../09_ECOSYSTEM/01_CORE/Component_Catalog.md)
 
 ---
 
-*Repository: DoozHub/dooz-ai-router*
+> **Naming Convention**: This package is part of the `lib-*` tier (reusable libraries).
+> Repository: [DoozHub/lib-ai-router](https://github.com/DoozHub/lib-ai-router)
+> Last Updated: 2026-04-14
