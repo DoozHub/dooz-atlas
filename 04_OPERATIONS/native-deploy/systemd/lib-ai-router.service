@@ -1,0 +1,25 @@
+[Unit]
+Description=Dooz lib-ai-router (Bun service)
+After=network-online.target
+
+[Service]
+Type=simple
+User=dooz
+Group=dooz
+WorkingDirectory=/opt/dooz/apps/lib-ai-router
+EnvironmentFile=/etc/dooz/env/lib-ai-router.env
+ExecStart=/usr/local/bin/bun run src/index.ts
+Restart=on-failure
+RestartSec=5s
+StandardOutput=append:/opt/dooz/logs/lib-ai-router.log
+StandardError=append:/opt/dooz/logs/lib-ai-router.log
+
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/dooz/data /opt/dooz/logs
+RestrictRealtime=true
+
+[Install]
+WantedBy=multi-user.target

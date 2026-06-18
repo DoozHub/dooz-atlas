@@ -1,0 +1,33 @@
+[Unit]
+Description=Dooz Operator Engine (W3 production runtime)
+After=network-online.target mysql.service
+Wants=network-online.target
+Requires=mysql.service
+
+[Service]
+Type=simple
+User=dooz
+Group=dooz
+WorkingDirectory=/opt/dooz/apps/operator-engine
+EnvironmentFile=/etc/dooz/env/operator-engine.env
+ExecStart=/usr/local/bin/bun run src/index.ts
+Restart=on-failure
+RestartSec=5s
+StandardOutput=append:/opt/dooz/logs/operator-engine.log
+StandardError=append:/opt/dooz/logs/operator-engine.log
+
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/dooz/data /opt/dooz/logs
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictRealtime=true
+
+[Install]
+WantedBy=multi-user.target

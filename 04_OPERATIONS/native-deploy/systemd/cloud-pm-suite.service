@@ -1,0 +1,25 @@
+[Unit]
+Description=Dooz cloud-pm-suite (Bun service)
+After=network-online.target
+
+[Service]
+Type=simple
+User=dooz
+Group=dooz
+WorkingDirectory=/opt/dooz/apps/cloud-pm-suite
+EnvironmentFile=/etc/dooz/env/cloud-pm-suite.env
+ExecStart=/usr/local/bin/bun run src/index.ts
+Restart=on-failure
+RestartSec=5s
+StandardOutput=append:/opt/dooz/logs/cloud-pm-suite.log
+StandardError=append:/opt/dooz/logs/cloud-pm-suite.log
+
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/dooz/data /opt/dooz/logs
+RestrictRealtime=true
+
+[Install]
+WantedBy=multi-user.target

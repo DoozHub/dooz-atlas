@@ -1,0 +1,28 @@
+[Unit]
+Description=Dooz Core (Laravel API + admin)
+After=network-online.target mysql.service php8.2-fpm.service nginx.service
+Wants=network-online.target
+Requires=mysql.service
+
+[Service]
+Type=simple
+User=dooz
+Group=dooz
+WorkingDirectory=/opt/dooz/apps/dooz-core
+EnvironmentFile=/etc/dooz/env/dooz-core.env
+ExecStart=/usr/bin/php artisan serve --host=127.0.0.1 --port=8000
+Restart=on-failure
+RestartSec=5s
+StandardOutput=append:/opt/dooz/logs/dooz-core.log
+StandardError=append:/opt/dooz/logs/dooz-core.log
+
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/dooz/apps/dooz-core/storage /opt/dooz/logs
+ProtectKernelTunables=true
+RestrictRealtime=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,25 @@
+[Unit]
+Description=Dooz cloud-perspective (Bun service)
+After=network-online.target
+
+[Service]
+Type=simple
+User=dooz
+Group=dooz
+WorkingDirectory=/opt/dooz/apps/cloud-perspective
+EnvironmentFile=/etc/dooz/env/cloud-perspective.env
+ExecStart=/usr/local/bin/bun run src/index.ts
+Restart=on-failure
+RestartSec=5s
+StandardOutput=append:/opt/dooz/logs/cloud-perspective.log
+StandardError=append:/opt/dooz/logs/cloud-perspective.log
+
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/dooz/data /opt/dooz/logs
+RestrictRealtime=true
+
+[Install]
+WantedBy=multi-user.target
